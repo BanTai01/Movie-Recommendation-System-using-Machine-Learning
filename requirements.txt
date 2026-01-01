@@ -5,5 +5,5 @@ scikit-learn
 sqlalchemy
 requests
 bcrypt
-pymysql
 scikit-surprise
+
