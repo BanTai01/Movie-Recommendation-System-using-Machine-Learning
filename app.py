@@ -1,6 +1,18 @@
 import streamlit as st
 from sqlalchemy import create_engine, text
 
+import pandas as pd
+import pickle
+
+# Database
+engine = create_engine("sqlite:///moviemind.db")
+
+# CSV
+movies = pd.read_csv("movies.csv")
+
+# Pickle
+with open("model.pkl", "rb") as f:
+    model = pickle.load(f)
 
 
 # Database connection
@@ -1758,3 +1770,4 @@ elif st.session_state.page == "signin":
 
 
     
+
