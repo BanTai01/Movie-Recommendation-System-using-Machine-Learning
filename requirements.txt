@@ -5,5 +5,4 @@ scikit-learn
 sqlalchemy
 requests
 bcrypt
-scikit-surprise
-
+scikit-surprise==1.1.1
